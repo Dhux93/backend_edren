@@ -7,8 +7,8 @@ import { Pdfs } from './Pdfs';
 
 @ViewEntity({
    name: "viewLibrosFree",
-   database:"db-edren12",
-   schema:"db-edren12",
+   database:"edrenpublicacion_db-edren12",
+   schema:"edrenpublicacion_db-edren12",
    expression: (connection: Connection) => connection.createQueryBuilder()
       .select("archivero.id", "id")
       .addSelect("archivero.Titulo", "Titulo")

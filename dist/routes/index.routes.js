@@ -1,0 +1,20 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var express_1 = require("express");
+var auth_routes_1 = require("./auth.routes");
+var user_routes_1 = require("./user.routes");
+var autores_routes_1 = require("./autores.routes");
+var images_routes_1 = require("./images.routes");
+var Pdf_routes_1 = require("./Pdf.routes");
+var archiveros_routes_1 = require("./archiveros.routes");
+var view_routes_1 = require("./view.routes");
+var routes = express_1.Router();
+routes.use('/auth', auth_routes_1.default);
+routes.use('/users', user_routes_1.default);
+routes.use('/autores', autores_routes_1.default);
+routes.use('/images', images_routes_1.default);
+routes.use('/pdf', Pdf_routes_1.default);
+routes.use('/viewAll', view_routes_1.default);
+routes.use('/archiveros', archiveros_routes_1.default);
+exports.default = routes;
+//# sourceMappingURL=index.routes.js.map
